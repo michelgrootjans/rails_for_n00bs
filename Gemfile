@@ -13,4 +13,5 @@ gem 'jquery-rails'
 
 group :development, :demo do
   gem 'rspec-rails'
+  gem 'capybara'
 end
