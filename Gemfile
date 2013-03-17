@@ -12,6 +12,7 @@ group :assets do
 end
 
 group :test do
+  gem 'rspec'
   gem 'shoulda-matchers'
   gem 'capybara'
   gem 'factory_girl_rails'
