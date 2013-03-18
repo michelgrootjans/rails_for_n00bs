@@ -17,6 +17,7 @@ group :test do
   gem 'capybara'
   gem 'factory_girl_rails'
   gem 'faker'
+  gem 'autotest-standalone'
 end
 
 # rspec-rails needs to be in the development group so that Rails generators work.
