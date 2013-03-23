@@ -18,6 +18,7 @@ group :test do
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'autotest-standalone'
+  gem 'autotest-growl'
 end
 
 # rspec-rails needs to be in the development group so that Rails generators work.
