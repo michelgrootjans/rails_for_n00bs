@@ -1,7 +1,9 @@
 <h1>My characters</h1>
 
 <% @characters.each do |character| %>
-    <%= character.name %>
+    <div>
+        <%= link_to character.name, character %>
+    </div>
 <% end %>
 
-<a href="/characters/new">Create New Character ...</a>
+<%= link_to "Create New Character ...", new_character_path %>

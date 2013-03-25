@@ -13,9 +13,8 @@ class CharactersController < ApplicationController
 
   def create
     @character = Character.new(params[:character])
-    if @character.valid?
-      @character.save
-      redirect_to action: :show, id: @character.id
+    if @character.save
+      redirect_to @character, notice: t("views.characters.create.success")
     else
       render :new
     end
