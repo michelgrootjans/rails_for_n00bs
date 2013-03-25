@@ -3,12 +3,14 @@ class CharactersController < ApplicationController
   end
 
   def show
+    @character = Character.find(params[:id])
   end
 
   def new
   end
 
   def create
-    redirect_to action: :show, id: 1
+    @character = Character.create(params[:character])
+    redirect_to action: :show, id: @character.id
   end
 end
