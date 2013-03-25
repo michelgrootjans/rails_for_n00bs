@@ -1,6 +1,12 @@
 require 'spec_helper'
 
 describe CharactersController do
+  it "indexes all characters" do
+    characters = [Character.create, Character.create, Character.create]
+    get :index
+    assigns(:characters).should == characters
+  end
+
   it "shows a characters detail" do
     character = Character.create
     get :show, id: character.id
