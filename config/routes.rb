@@ -1,8 +1,5 @@
 WarOfWorldcraft::Application.routes.draw do
-  # root :to => 'welcome#index'
+  root :to => 'characters#index'
 
-  get "/characters", controller: "characters", action: "index"
-  get "/characters/new", controller: "characters", action: "new"
-  get "/characters/:id", controller: "characters", action: "show"
-  post "/characters", controller: "characters", action: "create"
+  resources :characters, only: [:index, :show, :new, :create]
 end
