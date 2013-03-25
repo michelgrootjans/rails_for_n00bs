@@ -2,13 +2,13 @@ require 'spec_helper'
 
 describe CharactersController do
   it "indexes all characters" do
-    characters = [Character.create, Character.create, Character.create]
+    characters = FactoryGirl.create_list(:character, 3)
     get :index
     assigns(:characters).should == characters
   end
 
   it "shows a characters detail" do
-    character = Character.create
+    character = FactoryGirl.create(:character)
     get :show, id: character.id
     assigns(:character).should == character
   end

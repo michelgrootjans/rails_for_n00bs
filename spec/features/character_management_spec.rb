@@ -13,4 +13,13 @@ feature "Character management:" do
     page.should have_text "Character has been created"
     page.should have_text random_name
   end
+
+  scenario "User creates an invalid character" do
+    visit "/characters"
+    click_link "Create New Character ..."
+
+    click_button "Create Character"
+
+    page.should have_text "Namecan't be blank"
+  end
 end
