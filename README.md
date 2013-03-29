@@ -7,24 +7,12 @@ Want to try if this works for you?
 ----------------------------------
 Follow these steps:
 - Make sure you have this branch locally
-- Build your development database:
-```
-    rake db:migrate
-``
-- Build your test database:
-```
-    rake db:test:prepare
-```
-- Run the specs:
-```
-    rspec
-```
-- Verify autotest is running:
-```
-    autotest
-```
+- Build your development database: ```rake db:migrate```
+- Build your test database: ```rake db:test:prepare```
+- Run the specs: ```rspec```
+- Verify autotest is running: ```autotest```
 - Run the application:
-```
+    ```
     rails s
     go to http://localhost:3000
-```
+    ```
