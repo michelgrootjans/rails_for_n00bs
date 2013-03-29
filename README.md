@@ -11,9 +11,6 @@ Follow these steps:
 - Build your test database: ```rake db:test:prepare```
 - Run the specs: ```rspec```
 - Verify autotest can run: ```autotest```
-- Run the application:
-```ruby
-rails s
-
-go to http://localhost:3000
-```
+- Stop autotest: ```ctrl + C```
+- Run the application: ```rails s```
+- Go to go to ```http://localhost:3000```
