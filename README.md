@@ -10,9 +10,9 @@ Follow these steps:
 - Build your development database: ```rake db:migrate```
 - Build your test database: ```rake db:test:prepare```
 - Run the specs: ```rspec```
-- Verify autotest is running: ```autotest```
+- Verify autotest can run: ```autotest```
 - Run the application:
-    ```
-    rails s
-    go to http://localhost:3000
-    ```
+```ruby
+rails s
+go to http://localhost:3000
+```
