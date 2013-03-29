@@ -1,7 +1,7 @@
 <h1>My characters</h1>
 
 <% @characters.each do |character| %>
-    <div>
+    <div class="character">
         <%= link_to character.name, character %>
     </div>
 <% end %>
