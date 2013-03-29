@@ -1,4 +1,4 @@
-rails_for_n00bs
+Rails For n00bs
 ===============
 
 This should be the state of the application at the end of the talk.
@@ -8,10 +8,12 @@ Want to try if this works for you?
 Follow these steps:
 - Make sure you have this branch locally
 - Build your development database:
+```ruby
     rake db:migrate
+```
 - Build your test database:
     rake db:test:prepare
-- Run the specs
+- Run the specs:
     rspec
 - Verify autotest is running:
     autotest
