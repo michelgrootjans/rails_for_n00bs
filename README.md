@@ -14,5 +14,6 @@ Follow these steps:
 - Run the application:
 ```ruby
 rails s
+
 go to http://localhost:3000
 ```
