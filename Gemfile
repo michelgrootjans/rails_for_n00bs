@@ -16,7 +16,6 @@ group :test do
   gem 'shoulda-matchers'
   gem 'capybara'
   gem 'factory_girl_rails'
-  gem 'faker'
   gem 'autotest-standalone'
   gem 'autotest-growl'
 end
@@ -24,6 +23,7 @@ end
 # rspec-rails needs to be in the development group so that Rails generators work.
 group :development, :test do
   gem 'rspec-rails'
+  gem 'faker'
 end
 
 group :development do
