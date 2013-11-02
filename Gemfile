@@ -1,14 +1,16 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '4.0.1'
 gem 'sqlite3'
-gem 'simple_form'
+gem 'sass-rails', '~> 4.0.0'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder', '~> 1.2'
 
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
+group :doc do
+  gem 'sdoc', require: false
 end
 
 group :test do
