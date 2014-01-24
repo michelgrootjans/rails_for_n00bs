@@ -1,4 +1,5 @@
-<%= form_tag :characters, method: :post do %>
-    <input name="name"/>
-    <input type="submit" value="Create Character"/>
+<%= simple_form_for @character do |f| %>
+    <%= f.error_notification %>
+    <%= f.input :name %>
+    <%= f.submit %>
 <% end %>

@@ -1,8 +1,7 @@
 Wow::Application.routes.draw do
-  # root 'welcome#index'
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  root 'characters#index'
 
-  get "characters" => "characters#index"
-  post "characters" => "characters#create"
-  get "characters/new" => "characters#new"
-  get "characters/:id" => "characters#show"
+  resources :characters, only: [:index, :show, :new, :create]
 end

@@ -10,6 +10,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'simple_form'
 
+gem 'activeadmin', github: 'gregbell/active_admin'
+
 group :doc do
   gem 'sdoc', require: false
 end
