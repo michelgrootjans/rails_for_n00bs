@@ -15,5 +15,6 @@ Follow these steps:
 - Run the specs: ```rspec```
 - Verify autotest can run: ```autotest```
 - Stop autotest: ```ctrl + C```
+- Populate the database with sample data: ```rake db:seed``` (script can be found in db/seeds.rb)
 - Run the application: ```rails server```
 - Go to go to ```http://localhost:3000```
