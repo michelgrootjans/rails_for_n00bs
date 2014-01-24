@@ -1,5 +1,5 @@
-Rails For n00bs
-===============
+Rails For Cegeca
+================
 
 This should be the state of the application at the end of the talk.
 
