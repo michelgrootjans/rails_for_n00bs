@@ -1,6 +1,19 @@
-Rails for n00bs
+Rails For n00bs
 ===============
 
-Starting point for [my rails for n00bs talk at ACCU2013](http://accu.org/index.php/conferences/accu_conference_2013/accu2013_sessions#ruby_and_rails_for_n00bs).
+This should be the state of the application at the end of the talk.
 
-Want to see the endpoint? Go to the [demo](https://github.com/michelgrootjans/rails_for_n00bs/tree/demo) branch.
+Want to try if this works for you?
+----------------------------------
+Follow these steps:
+- Install ruby on your box
+- Make sure you have this branch locally
+- Navigate to the root of this branch
+- Bundle the gems: ```bundle install``
+- Build your development database: ```rake db:migrate```
+- Build your test database: ```rake db:test:prepare```
+- Run the specs: ```rspec```
+- Verify autotest can run: ```autotest```
+- Stop autotest: ```ctrl + C```
+- Run the application: ```rails s```
+- Go to go to ```http://localhost:3000```
