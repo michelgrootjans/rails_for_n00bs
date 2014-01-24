@@ -15,5 +15,5 @@ Follow these steps:
 - Run the specs: ```rspec```
 - Verify autotest can run: ```autotest```
 - Stop autotest: ```ctrl + C```
-- Run the application: ```rails s```
+- Run the application: ```rails server```
 - Go to go to ```http://localhost:3000```
